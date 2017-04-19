@@ -1,0 +1,25 @@
+<!-- nuovo partial list aaa-->
+    <div>
+    	<div class="jumbotronVito">
+			<h1>Righe verticali</h1>
+			<p>Appunti di programmazione generalmente in java.</p>
+		</div>
+		<div cg-busy="{promise:promessa,message:messaggio,templateUrl:'html/templateAttendere.html'}">
+			<div class="row"  ng-repeat="item in items" >
+				<div class="col-md-8">
+		
+					<h3 class="titoloArticolo"><a href="" ng-click="viewItem(item)">{{item.titolo}}</a>
+			      		<button class="btn btn-default btn-sm" aria-label="Left Align"  type="button" ng-click="editItem(item)" >
+							<span class="glyphicon glyphicon-edit" aria-hidden="true"> </span>
+							<span>Edit</span>
+						</button>
+					</h3>
+				      <p class="previewArticolo"><a href="" ng-click="viewItem(item)">{{item.riassunto}}</a></p>
+		
+		        </div>
+		        <div class="col-md-4">
+				</div>
+			</div> 
+		</div>
+		
+    </div>
